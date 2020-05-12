@@ -25,6 +25,7 @@
     <StartupObject />
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageLicenseUrl Condition="'$(OS)' != 'Windows_NT'">https://github.com/SpiceSharp/SpiceSharpParser/blob/master/LICENSE</PackageLicenseUrl>
+    <Company>SpiceSharp</Company>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard1.5|AnyCPU'">
@@ -37,7 +38,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="SpiceSharp" Version="2.8.0" />
-    <PackageReference Include="SpiceSharpBehavioral" Version="1.1.5" />
+    <ProjectReference Include="..\..\..\SpiceSharpBehavioral\SpiceSharpBehavioral\SpiceSharpBehavioral.csproj" />
+    <ProjectReference Include="..\..\..\SpiceSharp\SpiceSharp\SpiceSharp.csproj" />
   </ItemGroup>
 </Project>
